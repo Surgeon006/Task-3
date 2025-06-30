@@ -62,4 +62,16 @@ body {
         border: 2px solid #0077cc;
     }
 
-  
+  @media (max-width:760px) {
+          /* Styles for screen smaller than 760px (e.g., tablets, phones) */
+    .container {
+      width: 90%; /* Adjust container width */
+    }
+  }
+
+  @media (min-width: 1200px) {
+    /* Styles for screen larger than 1200px (e.g., large desktops) */
+    .container{
+      width:  1140px; /* Adjust container width */
+    }
+  }
