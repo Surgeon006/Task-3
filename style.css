@@ -1,0 +1,88 @@
+.container {
+     display: flex;
+     font-style: italic;
+     
+  }
+
+
+.image-container {
+    width: 50%;
+    padding: 10px;
+    box-shadow: 10px;
+}
+
+ .image-container img {
+   object-fit: contain ;
+    height:600px;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+body {
+       background-image: url(background.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-attachment: fixed;
+       background-size: cover;
+       background-blend-mode: color-burn;
+       padding-top: 2%;
+       border-style: solid ;
+       border-radius: 10px;
+       border-color: rgb(25, 48, 96);
+       border-radius: 20px 20px 20px 20px;
+       border-width: 10px;
+    }
+
+     textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 1em;
+    padding-right:20%;
+  }
+  
+  .button-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px 30px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+
+    button:hover {
+        background-color: white;
+        color: #0077cc;
+        border: 2px solid #0077cc;
+    }
+
+    @media only screen and (max-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 6;}
+  .item3 {grid-area: 3 / span 6;}
+  .item4 {grid-area: 4 / span 6;}
+  .item5 {grid-area: 5 / span 6;}
+}
+
+@media only screen and (min-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 3 / span 6;}
+  .item5 {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 768px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 2 / span 1;}
+  .item5 {grid-area: 3 / span 6;}
+}
+  
